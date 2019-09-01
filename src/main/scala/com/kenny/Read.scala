@@ -43,6 +43,6 @@ object Read extends App {
   val ed = System.currentTimeMillis()
   println("sort spent:" + (ed - mi))
   println(values)
-  values.map(println)
+//  values.map(println)
 }
 
