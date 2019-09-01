@@ -27,7 +27,7 @@ object ReadFun extends App {
     value
   }
   //  val values = res.toList.filter(x => x._1 != "name").sortWith(_._3.toDouble > _._3.toDouble).take(10)
-  // type class 实现了 topN
+  //  type class 实现了 topN
 
   import com.kenny.topn.RichTupleTopNList._
 
