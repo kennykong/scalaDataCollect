@@ -23,7 +23,7 @@ trait TopN[T] {
 }
 
 object TopN {
-  def topN1[A: TopN](n:Int, xs: List[A]): List[A] = {
+  def topN[A: TopN](n:Int, xs: List[A]): List[A] = {
     val topN = implicitly[TopN[A]]
     topN.topNMax(n,xs)
   }

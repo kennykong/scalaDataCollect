@@ -56,6 +56,11 @@ list.topNWith( _.score, 10)
 
 ---
 
+### 5. 完成对4的改进
+已完成，在topn1包里面，运行ReadFun1
+
+---
+
 ### 参考
 1. 从字符串里面提取出双引号的内容
 https://blog.csdn.net/u010102284/article/details/17246413
