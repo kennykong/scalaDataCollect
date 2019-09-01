@@ -46,7 +46,7 @@
 1. 从字符串里面提取出双引号的内容
 https://blog.csdn.net/u010102284/article/details/17246413
 
-2. 老外写的通用TopN
+2. 老外写的不够通用的TopN
 https://blog.genuine.com/2018/06/generic-top-n-elements-in-scala/
 
 3. 如何为已有类库扩展方法
