@@ -11,7 +11,7 @@ trait TopN[T] {
 
     val mList = new ListBuffer[T]().addAll(list)
     val list1 = for (i <- 1 to n) yield {
-      println(i)
+//      println(i)
       val max = mList.maxBy(compareWith)
       val i1 = mList.indexOf(max)
       mList.remove(i1)
