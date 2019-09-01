@@ -32,7 +32,7 @@
 2. 参照了外国小哥的topN的写法，但是发现他的写法里面还是用了sort，这样最初的 "用多少排多少" 的想法没有实现。
 3. 还有一个更要命的是他的方法不够"通用"，他自己给了一个Score的实现，我用的是Tuple3，难道要再按照他的算法写一个Tuple3的实现？这太重复代码工作量了
 4. 还有一个不美的地方是，我希望直接通过list后面通过.连缀的方式来实现topN，他这个也做不到
-5. 最后scala的"杀手锏"不得不使出来了，就是类型类（TypeClass），类型类的实现请参考下[learning-scalaz](http://eed3si9n.com/learning-scalaz/polymorphism.html)的ad-hoc polymorphism的例子。
+5. 最后scala的"杀手锏"不得不使出来了，就是类型类（TypeClass），类型类其实是 **函数通过类型的方式** 在scala的实现，类型类的实现请参考下[learning-scalaz](http://eed3si9n.com/learning-scalaz/polymorphism.html)的ad-hoc polymorphism的例子。
 6. 然后在list后面通过.连缀的方式是implicit的功能之一，这个programming in scala有详细介绍的，demo包里面有个例子RichFile，不再赘述。
 7. 当然5，6两个功能要结合还是花了一些时间的，调试起来需要理一理思路，这个需要尝试和领悟。
 
@@ -46,3 +46,6 @@ https://blog.genuine.com/2018/06/generic-top-n-elements-in-scala/
 
 3. 如何为已有类库扩展方法
 https://blog.csdn.net/qq_36330643/article/details/77866144
+
+4. TypeClass 和 ad-hoc polymorphism
+http://eed3si9n.com/learning-scalaz/polymorphism.html
