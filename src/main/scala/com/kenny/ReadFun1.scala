@@ -29,11 +29,12 @@ object ReadFun1 extends App {
   //  val values = res.toList.filter(x => x._1 != "name").sortWith(_._3.toDouble > _._3.toDouble).take(10)
   //  type class 实现了 topN
 
-//  import com.kenny.topn.RichTupleTopNList._
+  //  import com.kenny.topn.RichTupleTopNList._
 
-//  val values = res.toList.filter(x => x._1 != "name").topN(10)
+  //  val values = res.toList.filter(x => x._1 != "name").topN(10)
 
   // 实现了类型推断
+
   import com.kenny.topn1.RicTopNList1._
 
   val values = res.toList.filter(x => x._1 != "name").topN1With(10, _._3.toDouble)
