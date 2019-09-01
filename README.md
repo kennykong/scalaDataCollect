@@ -45,11 +45,11 @@
 ### 4. 不足
 这样的写法的不足就是缺少类型推断的能力，比如说我用Tuple就是这样：
 ```
-list.topNWith(_._1 > _._2, 10)
+list.topNWith( _._2, 10)
 ```
 我用Movie.score就是这样：
 ```
-list.topNWith(_.score > _.score, 10)
+list.topNWith( _.score, 10)
 ```
 
 以后再做改进，待续...
