@@ -11,7 +11,7 @@ trait TopN[T] {
 
     val mList = new ListBuffer[T]().addAll(list)
     val list1 = for (i <- 1 to n) yield {
-//      println(i)
+      //      println(i)
       val max = mList.maxBy(compareWith)
       val i1 = mList.indexOf(max)
       mList.remove(i1)
@@ -23,9 +23,9 @@ trait TopN[T] {
 }
 
 object TopN {
-  def topN[A: TopN](n:Int, xs: List[A]): List[A] = {
+  def topN[A: TopN](n: Int, xs: List[A]): List[A] = {
     val topN = implicitly[TopN[A]]
-    topN.topNMax(n,xs)
+    topN.topNMax(n, xs)
   }
 
 }
@@ -34,11 +34,11 @@ object TopNMain extends TopN[Double] {
 
   def main(args: Array[String]): Unit = {
     implicit val list: List[Double] = List(3, 2, 8, 2, 9, 1, 5, 5, 9, 1, 7, 3, 4)
-    println(topNMax(5,list))
+    println(topNMax(5, list))
     // res1: List[Double] = List(1.0, 1.0, 2.0, 2.0, 3.0)
 
     implicit val list1: List[Double] = List(3, 2, 8, 2, 9, 1, 5, 5, 9, 1, 7, 3, 4)
-    println(topNMax(5,list1))
+    println(topNMax(5, list1))
     // res2: List[Int] = List(1, 1, 2, 2, 3)
   }
 
